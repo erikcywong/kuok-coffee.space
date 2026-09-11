@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAPELL — Aeroponic Coffee Unit Economics × Kuok Group</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">KUOK <b>GROUP</b> × NAPELL
+      </a>
+    <nav class="links">
+      <a href="index.html"><span class="en">Summary</span><span class="zh">摘要</span></a>
+      <a href="financials.html"><span class="en">Financials</span><span class="zh">财务十年</span></a>
+      <a href="balance.html"><span class="en">Balance Sheet</span><span class="zh">资产负债</span></a>
+      <a class="on" href="napell.html"><span class="en">Unit Economics</span><span class="zh">单位经济</span></a>
+      <a href="investment.html"><span class="en">Investment</span><span class="zh">投资建议</span></a>
+      <a href="outlook.html"><span class="en">Outlook</span><span class="zh">展望</span></a>
+      <button class="langbtn" id="langToggle">中文</button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap hero">
+  <div class="eyebrow">
+    <span class="tag gold">03 · <span class="en">Aeroponic Coffee Unit Economics</span><span class="zh">雾化水培咖啡单位经济</span></span>
+    <span class="tag">napell.space · <span class="en">Operational Cost Analysis</span><span class="zh">运营成本分析</span></span>
+  </div>
+  <h1 class="en">From Cost Structure to Industrial Innovation — Inside a 106-Hotel Group</h1>
+  <h1 class="zh">从成本结构到产业化创新 —— 而且就长在106家酒店里</h1>
+  <p class="lede en">The NAPELL Aeroponic Coffee Cultivation System replaces soil-based nurseries with a precision nutrient-mist pipeline: a 4-month growth cycle, three harvests per year, year-round output under controlled climate. At 73.5% gross margin and 2–3 year payback, the unit economics are attractive on their own. What makes them decisive inside Kuok Group is the surrounding structure: 106 Shangri-La hotels as the first customer, Wilmar's processing and consumer-distribution network as the second channel, KLN's 59-country logistics as the third, and K2 Strategic's telemetry stack as the data layer that turns the farm network into a measurable ESG asset.</p>
+  <p class="lede zh">NAPELL雾化水培咖啡种植系统以精密营养雾管道取代土壤苗圃：4个月生长周期、年产3批、可控气候下全年产出。73.5%毛利率、2–3年回收期，其单位经济本身已具吸引力。而真正令其在郭氏集团内部产生决定性价值的，是周边结构：106家香格里拉酒店作为第一个客户、丰益国际的加工与快消分销网络作为第二渠道、嘉里物流覆盖59国的物流能力作为第三层，以及K2 Strategic的遥测技术栈作为数据层——把农场网络变成可计量的ESG资产。</p>
+  <div class="rule"></div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="sechead"><span class="secno">3.1</span><h2 class="sec"><span class="en">The Numbers (Per Farm)</span><span class="zh">核心数字（单农场）</span></h2></div>
+    <div class="econ">
+      <div class="eco"><div class="v">US$414K</div><div class="l"><span class="en">Initial investment (≈HK$3.23m)</span><span class="zh">初始投资（≈HK$323万）</span></div></div>
+      <div class="eco"><div class="v">615K</div><div class="l"><span class="en">Seedlings per year</span><span class="zh">年产幼苗（株）</span></div></div>
+      <div class="eco"><div class="v">US$2.26M</div><div class="l"><span class="en">Annual revenue (≈HK$17.6m)</span><span class="zh">年收入（≈HK$1,763万）</span></div></div>
+      <div class="eco"><div class="v">73.5%</div><div class="l"><span class="en">Gross margin (group FY2025: 55.7%)</span><span class="zh">毛利率（集团FY2025为55.7%）</span></div></div>
+      <div class="eco"><div class="v">US$0.97</div><div class="l"><span class="en">Cost per seedling (≈¥6.61)</span><span class="zh">单株成本（≈¥6.61）</span></div></div>
+      <div class="eco"><div class="v">US$3.68</div><div class="l"><span class="en">Price per seedling (≈¥25)</span><span class="zh">单株售价（≈¥25）</span></div></div>
+      <div class="eco"><div class="v">4 <span class="en">months</span><span class="zh">个月</span></div><div class="l"><span class="en">Growth cycle · 3 batches/yr</span><span class="zh">生长周期 · 年产3批</span></div></div>
+      <div class="eco"><div class="v">10.8 <span class="en">acres</span><span class="zh">英亩</span></div><div class="l"><span class="en">Greenhouse area · 81 systems</span><span class="zh">温室面积 · 81套培育系统</span></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="secno">3.2</span><h2 class="sec"><span class="en">Cost &amp; Value Chain</span><span class="zh">成本与价值链</span></h2></div>
+    <div class="grid g2">
+      <div class="chart">
+        <div class="ct"><span class="en">Per-Seedling Spread (US$)</span><span class="zh">单株价差（美元）</span></div>
+        <div class="cs"><span class="en">US$3.68 price vs US$0.97 cost — a 73.5% gross margin, 17.8pct above the group's FY2025 blended margin</span><span class="zh">售价US$3.68 vs 成本US$0.97——73.5%毛利率，高于集团FY2025整体毛利率17.8个百分点</span></div>
+        <div id="chartSpread" class="cht"></div>
+      </div>
+      <div class="card">
+        <h3 class="en"><span class="blue">The climate thesis</span></h3>
+        <h3 class="zh"><span class="blue">气候逻辑</span></h3>
+        <p class="en">ICO research projects global land suitable for coffee could contract by up to <b>50% by 2050</b>, threatening the US$200bn+ coffee economy and 125 million livelihoods. Every displaced hectare creates seedling demand; every climate shock accelerates replanting with resilient, tissue-cultured stock. Demand here is climate-driven — structurally uncorrelated with Shangri-La's RevPAR, mainland ADR recovery or the geopolitical risk the Group itself flags in its FY2025 outlook.</p>
+        <p class="zh">ICO研究预测，气候压力下2050年全球适宜咖啡种植的土地面积可能缩减<b>高达50%</b>，威胁2,000亿美元以上的咖啡经济与1.25亿人生计。每一公顷退出的种植地都在创造幼苗需求；每一次气候冲击都在加速抗逆组培种苗的补种。这里的需求由气候驱动——与香格里拉RevPAR、内地平均房价修复，以及集团在FY2025展望中自陈的地缘政治风险，结构性无关。</p>
+      </div>
+    </div>
+    <div class="flow">
+      <div class="fnode"><b><span class="en">Climate-driven demand</span><span class="zh">气候驱动需求</span></b><span class="en">ICO: up to −50% coffee land by 2050</span><span class="zh">ICO预测2050年种植面积或减50%</span></div>
+      <div class="farrow">→</div>
+      <div class="fnode"><b><span class="en">Tissue culture + aeroponics</span><span class="zh">组培 + 雾培</span></b><span class="en">Soil-free, high-density, year-round, drought-resilient</span><span class="zh">无土、高密度、全年产出、抗旱避灾</span></div>
+      <div class="farrow">→</div>
+      <div class="fnode"><b><span class="en">106 hotels + Wilmar + KLN</span><span class="zh">106家酒店 + 丰益 + 嘉里</span></b><span class="en">F&amp;B demand, processing, 59-country distribution</span><span class="zh">餐饮需求、加工能力、59国分销</span></div>
+      <div class="farrow">→</div>
+      <div class="fnode"><b><span class="en">Carbon &amp; traceability data</span><span class="zh">碳与溯源数据</span></b><span class="en">K2 telemetry → credits &amp; green finance on US$7.65bn</span><span class="zh">K2遥测 → 碳信用与76.5亿美元债务绿色融资</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="secno">3.3</span><h2 class="sec"><span class="en">Why This Fits Kuok Group's Asset Base</span><span class="zh">为何契合郭氏集团的资产禀赋</span></h2></div>
+    <div class="grid tldr" style="margin-bottom:26px;">
+      <div class="card"><h3 class="en">106 hotels = a captive market, not a channel</h3><h3 class="zh">106家酒店 = 内嵌市场，不只是渠道</h3>
+        <p class="en">Shangri-La, JEN, Kerry Hotels, Traders and the new Shangri-La Signatures, covering 87 owned/leased properties plus 19 managed hotels across Hong Kong, Mainland China, Singapore, Malaysia, the Philippines, Japan, Australia, Europe and the Middle East. Every lobby, lounge, banquet and in-room coffee service is a first-point-of-sale for house-brand coffee — and every F&amp;B director is a buyer already inside the perimeter. Customer-acquisition cost on the first tranche of output is close to zero.</p>
+        <p class="zh">香格里拉、JEN、嘉里酒店、盛贸及全新香格里拉心玺，涵盖87家自有／租赁物业及19家管理酒店，遍及中国香港、中国内地、新加坡、马来西亚、菲律宾、日本、澳大利亚、欧洲与中东。每一处大堂、酒廊、宴会厅与客房咖啡服务都是自有品牌咖啡的首个销售点——每一位餐饮总监都是已身处体系内的买家。首批产出的获客成本接近于零。</p></div>
+      <div class="card"><h3 class="en">The chain already exists — only the plant is missing</h3><h3 class="zh">产业链已存在——只缺那株植物</h3>
+        <p class="en">Wilmar (US$70.4bn revenue) supplies commodity sourcing, processing and consumer-goods distribution; FFM adds flour and feed milling expertise; KLN moves goods across 59 countries with cold-chain capability; Kerry Properties and Allgreen hold the land and podium space. Aeroponic propagation is the single upstream link the Group does not control. Buying it integrates six businesses into one coffee platform — and the same argument applies to any crop facing climate-driven land loss.</p>
+        <p class="zh">丰益国际（营收704亿美元）提供大宗采购、加工与快消分销；FFM补充面粉与饲料加工专长；嘉里物流以冷链能力覆盖59国；嘉里建设和Allgreen持有土地与裙楼空间。雾培育苗是集团唯一未掌控的上游环节。掌握它，可将六项业务整合为一个咖啡平台——同一逻辑适用于任何面临气候性土地流失的作物。</p></div>
+      <div class="card"><h3 class="en">Space that earns 2.1%, put to work</h3><h3 class="zh">只赚2.1%的空间，可以更高效</h3>
+        <p class="en">Group ROE is 2.1% on US$14.43bn of assets. Hotel podiums, rooftops and back-of-house plots can host greenhouses without land acquisition — removing the largest capex item in the unit model and converting already-owned square metres into a 73.5%-margin use. K2 Strategic's data-centre discipline supplies the sensor, telemetry and edge-compute layer, so the network is instrumented from day one rather than retrofitted.</p>
+        <p class="zh">集团以144.3亿美元资产仅取得2.1%的ROE。酒店裙楼、天台与后场地块可改建温室而无需新购土地——直接削减单位模型中最大的资本开支项，把已有平方米转为73.5%毛利率的用途。K2 Strategic的数据中心工程能力提供传感、遥测与边缘计算层，使整个网络自第一天起即为可计量节点，而非事后加装。</p></div>
+    </div>
+  </section>
+</div>
+
+<div class="wrap"><div class="disc"><b class="en">Disclaimer</b><b class="zh">免责声明</b><span class="en">: NAPELL unit economics are derived from operational cost analysis on napell.space; revenue projections are estimates based on current market conditions (FX reference: US$1 = ¥6.80 / ≈HK$7.8). ICO 2050 land-contraction projection is a research scenario, not a forecast certainty. Group ROE and gross margin are Shangri-La Asia FY2025 reported figures; comparisons to the 106-hotel estate are illustrative of market access, not a contracted volume commitment. This material does not constitute investment advice.</span><span class="zh">：NAPELL单位经济数据来自napell.space运营成本分析；收入预测为基于当前市场状况的估算（汇率参考：1美元=6.80元人民币 / ≈7.8港元）。ICO2050年土地缩减预测为研究情景而非确定性预测。集团ROE与毛利率为香格里拉亚洲FY2025披露数据；与106家酒店规模的比较用于说明市场可达性，非承诺销量。本材料不构成投资建议。</span></div></div>
+
+<footer><div class="wrap"><span class="en">Data source: napell.space — Aeroponic Coffee Cultivation System (initial investment, output, cost &amp; pricing metrics, 2026); Shangri-La Asia FY2025 final results and results presentation for hotel count, group margins and ROE; Kuok Group corporate website for portfolio structure. Generated 2026-09-11.</span><span class="zh">数据来源：napell.space——雾化水培咖啡种植系统（初始投资、产出、成本与定价指标，2026）；香格里拉亚洲FY2025年度业绩及业绩演示材料（酒店数量、集团毛利率与ROE）；郭氏集团官网（业务组合结构）。生成时间：2026-09-11。</span></div></footer>
+
+<script src="assets/js/i18n.js"></script>
+<script>
+function L(en, zh) { return (window.FEC_LANG && window.FEC_LANG() === "zh") ? zh : en; }
+function render() {
+  var el = document.getElementById("chartSpread");
+  if (!el) return;
+  echarts.dispose(el);
+  echarts.init(el).setOption({
+    backgroundColor: "transparent",
+    textStyle: { color: "#c9cdd1" },
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
+    grid: { left: 60, right: 60, top: 30, bottom: 30 },
+    xAxis: { type: "value", name: "US$", axisLabel: { color: "#71767b" }, splitLine: { lineStyle: { color: "#1c2530" } } },
+    yAxis: { type: "category", data: [L("Sale Price","售价"), L("Cost","成本")], axisLabel: { color: "#c9cdd1" } },
+    series: [{
+      type: "bar", barMaxWidth: 40,
+      data: [
+        { value: 3.68, itemStyle: { color: "#00ba7c", borderRadius: [0,4,4,0] } },
+        { value: 0.97, itemStyle: { color: "#f4212e", borderRadius: [0,4,4,0] } }
+      ],
+      label: { show: true, position: "right", color: "#e7e9ea", formatter: "${c}" }
+    }],
+    graphic: [{
+      type: "text", left: "center", top: 6,
+      style: { text: L("Gross Margin 73.5%","毛利率 73.5%"), fill: "#ffd400", fontSize: 14, fontWeight: "bold" }
+    }]
+  });
+}
+document.addEventListener("DOMContentLoaded", render);
+window.addEventListener("langchange", function () { setTimeout(render, 0); });
+</script>
+</body>
+</html>
