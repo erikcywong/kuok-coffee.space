@@ -139,7 +139,7 @@ function render() {
   echarts.init(el).setOption({
     backgroundColor: "transparent",
     textStyle: { color: "#c9cdd1" },
-    tooltip: { trigger: "axis", axisPointer: { type: "shadow" }, valueFormatter: function (v) { return v + "%"; } },
+    tooltip: { trigger: "axis", axisPointer: { type: "shadow" } },
     grid: { left: 70, right: 70, top: 30, bottom: 30 },
     xAxis: { type: "value", name: "%", max: 120, axisLabel: { color: "#71767b", formatter: "{value}%" }, splitLine: { lineStyle: { color: "#1c2530" } } },
     yAxis: { type: "category", data: [L("Aeroponic Segment (est.)","雾培分部（测算）"), L("Kuok Group (FY2025 actual)","郭氏集团（FY2025实际）")], axisLabel: { color: "#c9cdd1" } },
